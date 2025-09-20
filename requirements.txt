@@ -1,0 +1,21 @@
+#Core AI and ML libraries
+torch
+transformers
+sentence-transformers
+faiss-cpu # Use faiss-gpu if you have a CUDA-enabled GPU
+openai-whisper
+
+#Face and Fatigue Detection
+cmake
+dlib
+scipy
+opencv-python
+Pillow # For tkinter image display
+
+#Speech and Audio Processing
+sounddevice
+librosa
+numpy
+
+#Emotion Detection Models
+deepface

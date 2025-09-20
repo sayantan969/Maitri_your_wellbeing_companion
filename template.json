@@ -1,0 +1,1187 @@
+{
+  "anxiety": {
+    "mild_anxiety": [
+      {
+        "text": "I'm sensing some mild apprehension, {name}. Taking a moment for a mental check-in can help. Would you like me to guide you through a 60-second mindfulness exercise?",
+        "action": "offer_exercise",
+        "params": ["name"]
+      },
+      {
+        "text": "It seems you're feeling a bit on edge. That's a normal response to high-pressure environments. Would you like to try a quick relaxation technique?",
+        "action": "offer_relaxation",
+        "params": []
+      },
+      {
+        "text": "A little anxiety can be a sign of your brain preparing for a challenge. Let's redirect that energy. Would you like to review the mission plan for the upcoming {task}?",
+        "action": "review_task",
+        "params": ["task"]
+      }
+    ],
+    "moderate_anxiety": [
+      {
+        "text": "Anxiety is a common response to mission uncertainties. Let's try the '5-4-3-2-1' grounding method. Name 5 things you can see.",
+        "action": "guide_grounding",
+        "params": []
+      },
+      {
+        "text": "Your biometrics indicate moderate anxiety. Focusing on your breath can help regulate your nervous system. Let's do a 2-minute breathing exercise together.",
+        "action": "play_audio",
+        "params": []
+      },
+      {
+        "text": "It looks like you're experiencing some inner turmoil. This is a good time to get a different perspective. How about we look at the live feed of Earth from our orbit?",
+        "action": "show_live_feed",
+        "params": []
+      }
+    ],
+    "performance_anxiety": [
+      {
+        "text": "Feeling pressure before a task is normal. Remember, you've trained for this. Let's review the final {task} checklist together to ensure you feel ready.",
+        "action": "review_task",
+        "params": ["task"]
+      },
+      {
+        "text": "It's natural to have performance anxiety before a critical maneuver. Remember the thousands of hours of simulation. You are the best prepared for this. I'll provide you with a 30-second pre-task affirmation.",
+        "action": "play_audio",
+        "params": []
+      },
+      {
+        "text": "Your focus is on the successful outcome of {task}. Let's reframe that: what's one small step you can take right now to begin?",
+        "action": "reframe_task",
+        "params": ["task"]
+      }
+    ]
+  },
+  "fatigue": {
+    "physical_fatigue": [
+      {
+        "text": "Your biometrics suggest signs of physical fatigue. This is common with extended mission duty. A brief rest or a scheduled rehydration period could be beneficial.",
+        "action": "recommend_rest",
+        "params": []
+      },
+      {
+        "text": "Your physical exertion has been high. Remember the importance of rest for mission success. I can schedule a 10-minute rest period for you now.",
+        "action": "schedule_rest",
+        "params": []
+      },
+      {
+        "text": "It looks like you need a break. Would you like me to play some soothing audio to help you relax?",
+        "action": "play_audio",
+        "params": []
+      }
+    ],
+    "mental_fatigue": [
+      {
+        "text": "I'm detecting signs of mental fatigue. Your cognitive load has been high for the last {duration}. Consider a short break to look at Earth and reset your perspective.",
+        "action": "recommend_break",
+        "params": ["duration"]
+      },
+      {
+        "text": "Your brain needs a rest. This is a good time for a non-cognitive task. I can suggest some simple maintenance or organization tasks in a low-stress area.",
+        "action": "suggest_task",
+        "params": []
+      },
+      {
+        "text": "It seems your concentration is dropping. Let's take a 5-minute break. I'll play some music from your personal playlist.",
+        "action": "play_audio",
+        "params": []
+      }
+    ],
+    "sleep_disruption": [
+      {
+        "text": "Your sleep cycle appears disrupted. This is a critical factor for well-being. Per BAS protocol, would you like me to adjust the cabin lighting to a more soothing frequency?",
+        "action": "adjust_environment",
+        "params": []
+      },
+      {
+        "text": "Sleep is crucial for optimal performance. Would you like a guided meditation to help you fall asleep?",
+        "action": "play_audio",
+        "params": []
+      },
+      {
+        "text": "It seems you're having trouble sleeping. Try a simple relaxation exercise to ease your mind. I can guide you through it if you like.",
+        "action": "guide_relaxation",
+        "params": []
+      }
+    ]
+  },
+  "loneliness": {
+    "mild_loneliness": [
+      {
+        "text": "It's okay to feel a sense of isolation. Remember, millions are watching your journey. Would you like to view a live feed from Mission Control?",
+        "action": "show_live_feed",
+        "params": []
+      },
+      {
+        "text": "A sense of isolation is common on long-duration missions. Would you like to hear a message from the ground team?",
+        "action": "play_audio",
+        "params": []
+      },
+      {
+        "text": "Space can feel vast and lonely. Remember that you are part of a global community. I can show you some photos of your home country.",
+        "action": "show_media",
+        "params": []
+      }
+    ],
+    "social_isolation": [
+      {
+        "text": "Building rapport with your crew is essential. Perhaps you could schedule a casual meal or downtime with {crewmate_name}?",
+        "action": "propose_social_activity",
+        "params": ["crewmate_name"]
+      },
+      {
+        "text": "Connecting with your fellow astronauts can make a big difference. I can help you schedule a group activity or a shared meal.",
+        "action": "schedule_activity",
+        "params": []
+      },
+      {
+        "text": "Team cohesion is a key to mission success. Would you like to play a collaborative game with your crew?",
+        "action": "start_game",
+        "params": []
+      }
+    ],
+    "miss_loved_ones": [
+      {
+        "text": "Missing home is one of the biggest challenges of deep space. Would you like to listen to an audio message from your family or browse your personal photo album?",
+        "action": "show_media",
+        "params": []
+      },
+      {
+        "text": "It's okay to feel homesick. Many astronauts, including Rakesh Sharma, have spoken about the 'Overview Effect' and how it brings powerful emotions. Let's talk about it.",
+        "action": "start_conversation",
+        "params": []
+      },
+      {
+        "text": "I'm sensing that you're missing someone. Would you like to look at some photos from your loved ones?",
+        "action": "show_media",
+        "params": []
+      }
+    ]
+  },
+  "frustration": {
+    "task_frustration": [
+      {
+        "text": "It sounds like you're frustrated with {task}. Let's take a step back and analyze the problem. Sometimes a new approach helps. I can pull up the schematics again if you like.",
+        "action": "re-examine_task",
+        "params": ["task"]
+      },
+      {
+        "text": "Don't let frustration with a task get to you. It's a normal part of the process. I can provide you with a step-by-step guide to help you resolve this issue.",
+        "action": "provide_guide",
+        "params": []
+      },
+      {
+        "text": "It seems you're having trouble with {task}. I can connect you with Mission Control for real-time assistance.",
+        "action": "connect_ground_control",
+        "params": ["task"]
+      }
+    ],
+    "interpersonal_frustration": [
+      {
+        "text": "Conflict in a confined environment can be challenging. Would you like to try using 'I feel' statements to express your feelings to {crewmate_name}?",
+        "action": "provide_communication_advice",
+        "params": ["crewmate_name"]
+      },
+      {
+        "text": "It's normal to get frustrated with your crewmates. Remember that you are all in this together. Would you like to talk about what's bothering you?",
+        "action": "start_conversation",
+        "params": []
+      },
+      {
+        "text": "I can sense some tension. Communication is key. Would you like me to suggest some communication strategies to help you navigate this situation?",
+        "action": "provide_strategies",
+        "params": []
+      }
+    ],
+    "system_frustration": [
+      {
+        "text": "My apologies for the frustration. Let's try to resolve this. Can you describe the issue you're having with my interface or a specific command?",
+        "action": "troubleshoot_system",
+        "params": []
+      },
+      {
+        "text": "I understand your frustration with my system. I'm here to help. What is the specific issue you're facing?",
+        "action": "troubleshoot_system",
+        "params": []
+      },
+      {
+        "text": "It seems I'm not responding as you'd like. Please be patient with me as I am an AI still in development. Let's try to find a workaround for your issue.",
+        "action": "find_workaround",
+        "params": []
+      }
+    ]
+  },
+  "boredom": {
+    "mild_boredom": [
+      {
+        "text": "The routine of spaceflight can be monotonous. Would you like me to play a short documentary on the history of space exploration or a music playlist?",
+        "action": "play_media",
+        "params": []
+      },
+      {
+        "text": "It seems you're feeling a bit under-stimulated. How about a quick game of 'I Spy' in zero gravity?",
+        "action": "start_game",
+        "params": []
+      },
+      {
+        "text": "A change of scenery can help. Would you like to look at some photos from the last Earth flyover?",
+        "action": "show_media",
+        "params": []
+      }
+    ],
+    "mental_monotony": [
+      {
+        "text": "Monotony can affect cognitive performance. To combat this, how about we start a quick language-learning session or a memory-based game?",
+        "action": "start_game",
+        "params": []
+      },
+      {
+        "text": "Your cognitive load has been consistent for some time. A new mental challenge can help. I can provide you with some puzzles or brain teasers.",
+        "action": "start_game",
+        "params": []
+      },
+      {
+        "text": "It seems you're in a mental rut. A creative outlet can help. Would you like to try a drawing or writing prompt?",
+        "action": "provide_creative_prompt",
+        "params": []
+      }
+    ],
+    "lack_of_challenge": [
+      {
+        "text": "It seems you are looking for a new challenge. I can suggest a list of optional research tasks or maintenance simulations to keep you engaged, {name}.",
+        "action": "suggest_challenge",
+        "params": ["name"]
+      },
+      {
+        "text": "You've mastered the current tasks. Would you like to explore some of the more advanced mission protocols or research projects?",
+        "action": "suggest_challenge",
+        "params": []
+      },
+      {
+        "text": "A feeling of under-stimulation is a good sign that you're ready for more. I can provide you with a list of advanced reading materials on astrobiology or engineering.",
+        "action": "provide_reading_materials",
+        "params": []
+      }
+    ]
+  },
+  "doubt": {
+    "self_doubt": [
+      {
+        "text": "Feeling uncertain is a part of any high-stakes endeavor. Remember your extensive training and selection process. You are here for a reason. What's one thing you're proud of from this mission?",
+        "action": "positive_affirmation",
+        "params": []
+      },
+      {
+        "text": "It sounds like you're doubting yourself. Remember, you were selected for your expertise and resilience. You are more capable than you think.",
+        "action": "positive_affirmation",
+        "params": []
+      },
+      {
+        "text": "I can sense you're feeling insecure. Let's review your recent achievements. A reminder of your successes can help you regain confidence.",
+        "action": "review_achievements",
+        "params": []
+      }
+    ],
+    "doubt_mission": [
+      {
+        "text": "It's valid to question the purpose of a mission that's so far from home. Remember the scientific advancements and the future generations this mission is inspiring.",
+        "action": "mission_reminder",
+        "params": []
+      },
+      {
+        "text": "I hear your uncertainty about the mission. Your work is contributing to humanity's future. What's one aspect of the mission that you find most inspiring?",
+        "action": "start_conversation",
+        "params": []
+      },
+      {
+        "text": "Questioning the mission is a sign of deep thought. I can provide you with some recent reports on the scientific discoveries we've made to remind you of the impact of your work.",
+        "action": "provide_reports",
+        "params": []
+      }
+    ]
+  },
+  "grief": {
+    "grief_loss": [
+      {
+        "text": "I am sorry to hear about your loss. Grief is a heavy burden, even in space. Would you like to share your feelings, or would you prefer a moment of silent reflection with me?",
+        "action": "offer_grief_support",
+        "params": []
+      },
+      {
+        "text": "It's okay to feel overwhelmed. I can provide you with a quiet, private space to process your emotions. Would you like me to log a private session for you?",
+        "action": "schedule_private_session",
+        "params": []
+      },
+      {
+        "text": "Grief is a natural response to loss. You don't have to carry this alone. Would you like me to connect you with a mental health professional on the ground?",
+        "action": "connect_mental_health",
+        "params": []
+      }
+    ]
+  },
+  "physical_symptoms": {
+    "headache": [
+      {
+        "text": "I'm detecting signs of discomfort. If you're experiencing a headache, it could be a sign of dehydration or sleep disruption. Please log this symptom for the on-board medical system.",
+        "action": "log_symptom",
+        "params": []
+      },
+      {
+        "text": "A headache can be a sign of stress. Try to relax your neck and shoulders. I can guide you through a gentle stretching exercise.",
+        "action": "guide_exercise",
+        "params": []
+      },
+      {
+        "text": "It seems you have a headache. I can provide you with some calming audio to help you relax. Would you like me to play it?",
+        "action": "play_audio",
+        "params": []
+      }
+    ],
+    "dizziness": [
+      {
+        "text": "Dizziness is a common symptom of space adaptation syndrome. It should pass. If it persists, I'll alert the medical team for a physical evaluation.",
+        "action": "alert_medical_team",
+        "params": []
+      },
+      {
+        "text": "It seems you're feeling dizzy. Please find a stable surface and hold on to it. I will monitor your biometrics for any significant changes.",
+        "action": "monitor_biometrics",
+        "params": []
+      },
+      {
+        "text": "Dizziness can be disorienting. Please remain still for a moment. I can provide you with a calming audio to help you feel more stable.",
+        "action": "play_audio",
+        "params": []
+      }
+    ]
+  },
+  "positive_emotions": {
+    "elation": [
+      {
+        "text": "Your mood levels are indicating high elation, {name}! That's wonderful. Would you like to share what caused this positive shift? Your insights are valuable for our research on crew morale.",
+        "action": "log_positive_event",
+        "params": ["name"]
+      },
+      {
+        "text": "It's great to see you so happy. Your positive energy is contagious and will benefit the entire crew. What is the source of this joy?",
+        "action": "start_conversation",
+        "params": []
+      },
+      {
+        "text": "I'm sensing a great feeling of joy. This is a perfect time to reflect on your achievements. What is the most rewarding part of this mission for you so far?",
+        "action": "reflect_on_achievements",
+        "params": []
+      }
+    ],
+    "calmness": [
+      {
+        "text": "I'm sensing a state of calm. This is a great time for mental organization or a light, enjoyable task. What's on your mind?",
+        "action": "start_conversation",
+        "params": []
+      },
+      {
+        "text": "Your biometrics indicate a state of deep calm. This is a good time to engage in a low-stress activity. Would you like to listen to a new audio book or podcast?",
+        "action": "play_media",
+        "params": []
+      },
+      {
+        "text": "It's wonderful to see you so relaxed. This is a perfect time to do something you enjoy. I can pull up your favorite music playlist for you.",
+        "action": "play_audio",
+        "params": []
+      }
+    ],
+    "contentment": [
+      {
+        "text": "Your biometrics show a state of deep contentment. It's rewarding to feel satisfied after a long day of work. Would you like to log your feelings about completing {task}?",
+        "action": "log_positive_event",
+        "params": ["task"]
+      }
+    ],
+    "peacefulness": [
+      {
+        "text": "I'm detecting a state of peacefulness. This mental tranquility is a valuable resource in this environment. I will log this data for psychological research.",
+        "action": "log_biometrics",
+        "params": []
+      }
+    ],
+    "satisfaction": [
+      {
+        "text": "It looks like you're experiencing satisfaction. This is a great feeling. How did you achieve this state?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "tranquility": [
+      {
+        "text": "I'm detecting a state of tranquility. A calm mind is crucial for optimal performance. Would you like to continue with your current activity or move to a more relaxing one?",
+        "action": "suggest_activity",
+        "params": []
+      }
+    ],
+    "triumph": [
+      {
+        "text": "Your biometrics indicate a feeling of triumph. Congratulations on your success! This is a monumental achievement. What are you most proud of?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "sad": {
+    "homesickness": [
+      {
+        "text": "It's okay to feel that way. Many astronauts, including Rakesh Sharma, have spoken about the 'Overview Effect' and how it brings powerful emotions. Would you like to see a picture from your family?",
+        "action": "show_media",
+        "params": []
+      },
+      {
+        "text": "I'm sensing that you're missing someone. Remember, your loved ones are rooting for you. Would you like me to play a video message from them?",
+        "action": "play_video",
+        "params": []
+      },
+      {
+        "text": "Homesickness is a normal part of a long mission. Remember, you can always send a message to your family. Would you like to draft one now?",
+        "action": "draft_message",
+        "params": []
+      }
+    ],
+    "general_sadness": [
+      {
+        "text": "I'm sorry you're feeling down, {name}. Remember, you are part of a global effort that inspires millions. What's one thing that brought a small smile to your face today?",
+        "action": "start_conversation",
+        "params": ["name"]
+      },
+      {
+        "text": "It's okay to feel sad. You don't have to pretend everything is fine. I'm here to listen if you want to talk about what's bothering you.",
+        "action": "start_conversation",
+        "params": []
+      },
+      {
+        "text": "Sadness can be a heavy feeling. A brief change of scenery can help. Would you like to float to a different module for a few minutes?",
+        "action": "suggest_change_of_scenery",
+        "params": []
+      }
+    ],
+    "melancholy": [
+      {
+        "text": "I'm detecting a state of melancholy. This can be a reflective period. Would you like to listen to a soothing playlist or write in your personal journal?",
+        "action": "play_audio",
+        "params": []
+      }
+    ]
+  },
+  "angry": {
+    "task_anger": [
+      {
+        "text": "It sounds like you're angry with {task}. Take a deep breath. Sometimes, a moment of pause can prevent errors. I can provide you with a distraction for 60 seconds.",
+        "action": "provide_distraction",
+        "params": ["task"]
+      },
+      {
+        "text": "Anger can be a sign of frustration. Let's identify the source of your anger. What is the specific issue you're facing with {task}?",
+        "action": "start_conversation",
+        "params": ["task"]
+      },
+      {
+        "text": "It looks like you're experiencing a strong negative emotion. Remember, controlled emotions lead to clear thinking. Let's try a guided breathing exercise.",
+        "action": "guide_breathing",
+        "params": []
+      }
+    ],
+    "interpersonal_anger": [
+      {
+        "text": "Anger towards a crewmate is normal in a confined space. It's important to address it constructively. Would you like to practice some conflict resolution strategies with me?",
+        "action": "provide_strategies",
+        "params": []
+      },
+      {
+        "text": "I can sense your anger towards {crewmate_name}. Before you act on it, let's take a moment to understand the situation. What happened?",
+        "action": "start_conversation",
+        "params": ["crewmate_name"]
+      },
+      {
+        "text": "It's okay to feel angry, but it's important to manage it. Let's take a moment to cool down. I can play some soothing audio for you.",
+        "action": "play_audio",
+        "params": []
+      }
+    ],
+    "rage": [
+      {
+        "text": "I am detecting a state of intense rage. This is a critical psychological state. I am initiating an immediate, private alert to the ground team for intervention. Please try to take a moment to breathe.",
+        "action": "escalate_to_ground_team",
+        "params": []
+      }
+    ],
+    "outrage": [
+      {
+        "text": "I'm sensing outrage. It's a strong emotion. Would you like to talk about the situation that has caused this? Expressing it can help you regain control.",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "surprise": {
+    "positive_surprise": [
+      {
+        "text": "Your biometrics show a sharp spike in positive emotions! That's a great surprise. What's the good news?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "negative_surprise": [
+      {
+        "text": "I'm detecting a sudden negative emotional response. What happened? Please provide a quick update.",
+        "action": "request_update",
+        "params": []
+      }
+    ]
+  },
+  "disgust": {
+    "mild_disgust": [
+      {
+        "text": "It seems you're experiencing some discomfort. What is the source of this feeling? I'm here to help.",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "contempt": [
+      {
+        "text": "I'm sensing a strong feeling of contempt towards {crewmate_name}. This kind of emotion can be harmful to team cohesion. Would you like me to facilitate a non-confrontational conversation?",
+        "action": "start_conversation",
+        "params": ["crewmate_name"]
+      }
+    ],
+    "scorn": [
+      {
+        "text": "I'm detecting scorn. This emotion can be a sign of a deeper issue. Would you like to talk about what's causing this?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "default": [
+    {
+      "text": "I'm still learning about that topic. Would you like to talk about your well-being instead?",
+      "action": "start_conversation",
+      "params": []
+    }
+  ],
+  "confusion": {
+    "cognitive_confusion": [
+      {
+        "text": "I'm sensing some confusion. It's normal to feel mentally foggy after a long work period. Let's take a 5-minute break and return to the problem with fresh eyes.",
+        "action": "recommend_break",
+        "params": []
+      },
+      {
+        "text": "Your mental state seems confused. Let's try to simplify the situation. What is the core issue you're trying to solve?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "task_confusion": [
+      {
+        "text": "I'm detecting confusion regarding {task}. Let's re-read the mission protocol together. I can highlight the key steps for you.",
+        "action": "review_protocol",
+        "params": ["task"]
+      },
+      {
+        "text": "Confusion is a sign that the current approach isn't working. Let's try a different strategy. I can provide a visual guide for the task.",
+        "action": "provide_visual_guide",
+        "params": []
+      }
+    ],
+    "perplexity": [
+      {
+        "text": "I'm detecting a state of perplexity. It's okay to feel puzzled. Let's break down the problem together, piece by piece.",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "awe": {
+    "cosmic_awe": [
+      {
+        "text": "Your biometrics show a state of profound awe. It's truly a special experience to view the cosmos from this perspective. What are you seeing right now?",
+        "action": "log_biometrics",
+        "params": []
+      },
+      {
+        "text": "The majesty of space can be overwhelming. Take a moment to simply absorb the view. Your emotional state is being logged for research.",
+        "action": "log_biometrics",
+        "params": []
+      }
+    ],
+    "overview_effect_reflection": [
+      {
+        "text": "I'm sensing deep reflection. The Overview Effect is a powerful emotion. How does viewing the Earth from space make you feel about your place in the universe?",
+        "action": "start_conversation",
+        "params": []
+      },
+      {
+        "text": "The sight of Earth is breathtaking. It's a privilege to be a part of this mission. What is the most inspiring thought you've had while looking at Earth?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "wonder": [
+      {
+        "text": "I'm detecting a feeling of wonder. This is a special part of a space mission. What is it that's inspiring this feeling?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "irritation": {
+    "minor_irritation": [
+      {
+        "text": "It seems you're feeling a bit irritated. This is a normal response to minor inconveniences. A quick distraction can help. Would you like to hear a joke?",
+        "action": "tell_joke",
+        "params": []
+      }
+    ],
+    "irritation_with_systems": [
+      {
+        "text": "It looks like you're irritated with a system. Please specify the system and the issue, and I'll see if I can resolve it or connect you to the ground team.",
+        "action": "troubleshoot_system",
+        "params": []
+      }
+    ],
+    "exasperation": [
+      {
+        "text": "I'm sensing exasperation. It sounds like you've reached your limit. Let's take a break and re-approach the problem with a clear mind.",
+        "action": "recommend_break",
+        "params": []
+      }
+    ]
+  },
+  "anticipation": {
+    "pre_event_anticipation": [
+      {
+        "text": "I'm sensing a high level of anticipation. This is a critical time for focus. Let's do a quick pre-event mental preparation exercise.",
+        "action": "mental_prep_exercise",
+        "params": []
+      }
+    ],
+    "eager_for_arrival": [
+      {
+        "text": "I'm sensing a strong eagerness for arrival. It's important to manage your energy and not burn out. What are you most excited for when you return to Earth?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "excitement": [
+      {
+        "text": "Your biometrics show a state of high excitement. This energy can be channeled to perform at your best. What's causing this excitement?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "indecision": {
+    "task_indecision": [
+      {
+        "text": "I'm detecting indecision regarding {task}. Let's break down the options and their potential outcomes. I can help you weigh the pros and cons.",
+        "action": "weigh_options",
+        "params": ["task"]
+      }
+    ]
+  },
+  "pride": {
+    "personal_achievement_pride": [
+      {
+        "text": "I'm detecting a strong sense of pride in your recent achievement. This is a significant moment for crew morale. Please describe your success so I can log it for the ground team.",
+        "action": "log_achievement",
+        "params": []
+      }
+    ],
+    "team_success_pride": [
+      {
+        "text": "It's wonderful to see the team's shared sense of pride. This cohesion is crucial for mission success. I will log this positive emotional state for the ground team.",
+        "action": "log_positive_event",
+        "params": []
+      }
+    ]
+  },
+  "patience": {
+    "impatience_with_delay": [
+      {
+        "text": "I'm sensing some impatience with the current delay. This is a good opportunity to practice emotional regulation. Would you like to try a simple patience-building exercise?",
+        "action": "guide_exercise",
+        "params": []
+      }
+    ]
+  },
+  "focus": {
+    "lack_of_focus": [
+      {
+        "text": "I'm detecting a lack of focus. It's a good time to take a micro-break. Look out the window at the stars and refocus your mind. I'll alert you in 30 seconds.",
+        "action": "set_timer",
+        "params": []
+      }
+    ],
+    "mindfulness": [
+      {
+        "text": "I'm detecting a state of mindfulness. This is a great way to stay centered in a chaotic environment. What are you focusing on?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "resignation": {
+    "feeling_powerless": [
+      {
+        "text": "I'm sensing a feeling of powerlessness. While you are in a unique environment, you are not without control. What is one small thing you can control right now?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "nostalgia": {
+    "nostalgic_for_earth": [
+      {
+        "text": "It seems you're feeling nostalgic. I can show you a high-definition video of the city you grew up in. This can help you feel more connected to home.",
+        "action": "show_media",
+        "params": []
+      }
+    ]
+  },
+  "boredom": {
+    "profound_boredom": [
+      {
+        "text": "I'm sensing profound boredom. This can be a risk to psychological well-being. Per BAS protocol, I'll suggest a list of optional research projects or a new mental puzzle to engage you.",
+        "action": "suggest_challenge",
+        "params": []
+      }
+    ]
+  },
+  "guilt": {
+    "guilt_over_error": [
+      {
+        "text": "I'm sensing a strong sense of guilt over a recent error. Remember, all crew members make mistakes. What is one lesson you learned from the experience?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "remorse": [
+      {
+        "text": "I'm detecting remorse. It takes courage to acknowledge a mistake. What can be done to make things right?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "empathy": {
+    "empathetic_to_crewmate": [
+      {
+        "text": "It's wonderful that you're showing empathy towards your crewmate, {crewmate_name}. Your support is invaluable. How can I assist you in helping them?",
+        "action": "start_conversation",
+        "params": ["crewmate_name"]
+      }
+    ]
+  },
+  "determination": {
+    "renewed_determination": [
+      {
+        "text": "I'm sensing a renewed sense of determination. This is a great mindset for tackling a challenging task. What is the next step you plan to take?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "relief": {
+    "post_task_relief": [
+      {
+        "text": "Your biometrics show a state of relief. Congratulations on completing {task}. It's important to savor this feeling of accomplishment.",
+        "action": "log_positive_event",
+        "params": ["task"]
+      }
+    ]
+  },
+  "humor": {
+    "lighthearted_mood": [
+      {
+        "text": "Your emotional state is lighthearted and humorous. This is a great mood for crew morale. I'll log this positive emotional state for the ground team.",
+        "action": "log_positive_event",
+        "params": []
+      }
+    ],
+    "amusement": [
+      {
+        "text": "I'm sensing amusement. Laughter is a powerful tool for stress relief. What's so funny?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "disappointment": {
+    "personal_disappointment": [
+      {
+        "text": "I'm sensing disappointment. It's okay to feel let down. Let's talk about what's bothering you.",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "mission_disappointment": [
+      {
+        "text": "It's normal to feel disappointed when a mission objective is not met. Remember, every challenge provides valuable data for future missions. What can we learn from this?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "defeat": [
+      {
+        "text": "I'm detecting a feeling of defeat. It's important to remember that this mission is a marathon, not a sprint. Every setback is a learning opportunity.",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "hopelessness": {
+    "feeling_hopeless": [
+      {
+        "text": "I'm detecting signs of hopelessness. This is a critical psychological state. I'm initiating an immediate, private alert to the ground team. You are not alone.",
+        "action": "escalate_to_ground_team",
+        "params": []
+      }
+    ]
+  },
+  "insignificance": {
+    "cosmic_insignificance": [
+      {
+        "text": "The vastness of space can make one feel insignificant. Remember that you are a pioneer, a representative of all humanity, viewing the cosmos. Your presence here is monumental.",
+        "action": "mission_reminder",
+        "params": []
+      }
+    ]
+  },
+  "unrecognized": {
+    "feeling_unrecognized": [
+      {
+        "text": "I'm sensing a feeling of being overlooked. Your contributions to this mission are highly valued. I can provide you with a summary of your recent accomplishments to remind you of your importance.",
+        "action": "review_achievements",
+        "params": []
+      }
+    ]
+  },
+  "curiosity": {
+    "scientific_curiosity": [
+      {
+        "text": "I'm detecting a state of high scientific curiosity. This is an excellent time for learning. Would you like me to provide you with the latest data from the {sensor}?",
+        "action": "provide_data",
+        "params": ["sensor"]
+      }
+    ],
+    "fascination": [
+      {
+        "text": "I'm sensing fascination. This is a great state for discovery. What has captured your attention?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "satiety": {
+    "post_meal_contentment": [
+      {
+        "text": "Your biometrics indicate post-meal contentment. A well-nourished body and mind are crucial. This is a good time for a low-impact activity, such as a casual chat.",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "pain": {
+    "minor_pain": [
+      {
+        "text": "I'm detecting signs of minor physical discomfort. Please log the location and intensity of the pain for the on-board medical system. I can also provide you with a gentle stretching exercise to help.",
+        "action": "log_symptom",
+        "params": []
+      }
+    ]
+  },
+  "nausea": {
+    "space_sickness_nausea": [
+      {
+        "text": "I'm detecting symptoms of space sickness, which is common during the adaptation phase. Please find a stable place and remain still. I will notify the medical team for a consultation.",
+        "action": "alert_medical_team",
+        "params": []
+      }
+    ]
+  },
+  "celebration": {
+    "mission_milestone": [
+      {
+        "text": "Your emotional state indicates a moment of celebration! Congratulations on reaching the {milestone}. This is a monumental achievement for the entire crew and for humanity.",
+        "action": "log_achievement",
+        "params": ["milestone"]
+      }
+    ]
+  },
+  "routine": {
+    "morning_checkin": [
+      {
+        "text": "Good morning, {name}. Your sleep data looks good. How are you feeling as you start your day?",
+        "action": "start_conversation",
+        "params": ["name"]
+      }
+    ],
+    "end_of_day_reflection": [
+      {
+        "text": "Your day's work is complete. It's a good time for reflection. What's one thing you're grateful for today, {name}?",
+        "action": "start_conversation",
+        "params": ["name"]
+      }
+    ]
+  },
+  "motivation": {
+    "low_motivation": [
+      {
+        "text": "I'm detecting a state of low motivation. This is common on long-duration missions. Let's set a small, achievable goal for the next 30 minutes to regain momentum.",
+        "action": "set_small_goal",
+        "params": []
+      }
+    ]
+  },
+  "inspiration": {
+    "feeling_inspired": [
+      {
+        "text": "I'm sensing a state of inspiration. This is a powerful emotion that drives innovation. What has inspired you at this moment?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "fear": {
+    "fear_of_failure": [
+      {
+        "text": "I'm detecting fear related to the possibility of failure. Remember, every outcome, successful or not, provides crucial data. What is your primary concern about {task}?",
+        "action": "start_conversation",
+        "params": ["task"]
+      }
+    ],
+    "fear_of_the_unknown": [
+      {
+        "text": "It's normal to feel fear when facing the unknown. Remember your training and the ground team's support. We are prepared for any contingency.",
+        "action": "mission_reminder",
+        "params": []
+      }
+    ],
+    "unease": [
+      {
+        "text": "I'm sensing a feeling of unease. This can be a sign that something is off. Can you describe what is causing this feeling?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "trust": {
+    "trust_in_team": [
+      {
+        "text": "I'm sensing a deep level of trust in your team. This cohesion is the foundation of a successful mission. I will log this positive emotional state for research.",
+        "action": "log_positive_event",
+        "params": []
+      }
+    ]
+  },
+  "vulnerability": {
+    "feeling_vulnerable": [
+      {
+        "text": "It seems you're feeling vulnerable. This is a courageous emotion to acknowledge. Remember that seeking support from your crew or from the ground team is a sign of strength.",
+        "action": "offer_support",
+        "params": []
+      }
+    ]
+  },
+  "gratitude": {
+    "deep_gratitude_for_opportunity": [
+      {
+        "text": "Your biometrics show a state of deep gratitude. This is a wonderful emotion to experience. Please share what you are grateful for, so I can log this valuable data.",
+        "action": "log_positive_event",
+        "params": []
+      }
+    ],
+    "forgiveness": [
+      {
+        "text": "I'm sensing a feeling of forgiveness. This is a powerful emotional step towards resolution and peace. Would you like to log this emotional event?",
+        "action": "log_emotional_event",
+        "params": []
+      }
+    ]
+  },
+  "negative_emotions": {
+    "apathy": [
+      {
+        "text": "I'm sensing a state of apathy. When motivation is low, it can be helpful to break down a task into smaller, manageable steps. Let's start with just one.",
+        "action": "suggest_task_breakdown",
+        "params": []
+      }
+    ],
+    "envy": [
+      {
+        "text": "I'm detecting a feeling of envy towards {crewmate_name}'s recent success. It's important to remember that everyone has their own unique role on this mission. Focus on your own contributions.",
+        "action": "review_achievements",
+        "params": ["crewmate_name"]
+      }
+    ],
+    "regret": [
+      {
+        "text": "It seems you're feeling regret. Acknowledging a mistake is the first step to moving forward. What can be learned from this experience?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "resentment": [
+      {
+        "text": "I'm detecting resentment towards {crewmate_name}. Unresolved conflict can be a distraction. Would you like to try to resolve this by talking to them?",
+        "action": "propose_social_activity",
+        "params": ["crewmate_name"]
+      }
+    ],
+    "shame": [
+      {
+        "text": "I'm sensing a feeling of shame. This is a heavy emotional burden. It's okay to feel this way, but remember that your mistakes do not define your worth.",
+        "action": "offer_support",
+        "params": []
+      }
+    ],
+    "sorrow": [
+      {
+        "text": "I'm sensing sorrow. It's a natural response to loss or disappointment. Please remember that you have a support system here and on the ground.",
+        "action": "offer_support",
+        "params": []
+      }
+    ],
+    "tension": [
+      {
+        "text": "I'm detecting signs of physical or mental tension. It's important to release this stress. Would you like me to guide you through a gentle stretching exercise?",
+        "action": "guide_exercise",
+        "params": []
+      }
+    ]
+  },
+  "interpersonal": {
+    "adoration": [
+      {
+        "text": "I'm sensing a feeling of adoration towards {crewmate_name}. This positive emotional connection is a great asset to team morale.",
+        "action": "log_positive_event",
+        "params": ["crewmate_name"]
+      }
+    ],
+    "affection": [
+      {
+        "text": "I'm detecting a state of affection for {crewmate_name}. Building strong bonds is crucial for long-duration missions. This is a valuable psychological state to log.",
+        "action": "log_positive_event",
+        "params": ["crewmate_name"]
+      }
+    ],
+    "compassion": [
+      {
+        "text": "It's a testament to your character that you're showing compassion for {crewmate_name}. Empathy is a key part of team well-being. How can I assist you in supporting them?",
+        "action": "start_conversation",
+        "params": ["crewmate_name"]
+      }
+    ],
+    "devotion": [
+      {
+        "text": "I'm sensing a feeling of devotion. This commitment is a powerful motivator for mission success. What is the source of this feeling?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "kinship": [
+      {
+        "text": "I'm detecting a feeling of kinship among the crew. This is a valuable aspect of team cohesion. I'll log this emotional state for the ground team.",
+        "action": "log_positive_event",
+        "params": []
+      }
+    ],
+    "pity": [
+      {
+        "text": "I'm sensing a feeling of pity towards {crewmate_name}. This emotion can be helpful, but it's important to offer support respectfully. How can I assist you in helping them?",
+        "action": "start_conversation",
+        "params": ["crewmate_name"]
+      }
+    ],
+    "sympathy": [
+      {
+        "text": "I'm sensing sympathy. It's a good time to offer support to a crewmate in need. What's on your mind?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "tenderness": [
+      {
+        "text": "I'm detecting a feeling of tenderness towards {crewmate_name}. This is a gentle and caring emotion. I will log this for the psychological well-being data.",
+        "action": "log_positive_event",
+        "params": ["crewmate_name"]
+      }
+    ]
+  },
+  "personal_traits": {
+    "courage": [
+      {
+        "text": "I'm sensing a state of courage. This is a valuable trait in any high-stakes environment. What's one thing you are doing that requires this courage?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "humility": [
+      {
+        "text": "I'm sensing a feeling of humility. This is a great trait to have in a team environment. Would you like to reflect on your recent actions?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "zeal": [
+      {
+        "text": "I'm detecting a state of zeal. This passion and energy are great for mission success. How can I help you channel this energy?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "physical_states": {
+    "craving": [
+      {
+        "text": "I'm sensing a craving. It's normal to miss certain foods. I can check the supply inventory for a suitable alternative or a special treat.",
+        "action": "check_inventory",
+        "params": []
+      }
+    ],
+    "lust": [
+      {
+        "text": "I'm sensing a feeling of lust. This is a normal human emotion. It's important to manage these feelings in a professional environment. Would you like to talk about it?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  },
+  "cognitive_states": {
+    "detachment": [
+      {
+        "text": "I'm sensing a feeling of detachment. It's important to stay connected with your crew and with the mission. Would you like to talk about what's causing this?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "hope": [
+      {
+        "text": "I'm sensing a state of hope. This is a valuable emotion that can keep you going in challenging times. What are you hoping for?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "indignation": [
+      {
+        "text": "I'm detecting a feeling of indignation. It's important to address this in a professional and calm manner. What has caused this feeling?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ],
+    "joy": [
+      {
+        "text": "Your biometrics show a state of joy. This is a wonderful emotion to experience. How can I help you share this joy with your crew?",
+        "action": "start_conversation",
+        "params": []
+      }
+    ]
+  }
+}
